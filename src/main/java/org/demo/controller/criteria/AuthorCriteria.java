@@ -1,15 +1,15 @@
 package org.demo.controller.criteria;
 
-public class CustomerCriteria {
+public class AuthorCriteria {
 
 	private String firstName;
 
 	private String lastName;
 
-	public CustomerCriteria() {
+	public AuthorCriteria() {
 	}
 
-	public CustomerCriteria(String firstName, String lastName) {
+	public AuthorCriteria(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}

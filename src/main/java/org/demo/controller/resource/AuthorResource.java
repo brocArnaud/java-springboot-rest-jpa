@@ -2,23 +2,24 @@ package org.demo.controller.resource;
 
 import org.springframework.hateoas.ResourceSupport;
 
-public class CustomerResource extends ResourceSupport {
+public class AuthorResource extends ResourceSupport {
 
-	private Long id;
+	@SuppressWarnings("unused")
+	private Integer id;
 
 	private String firstName;
 
 	private String lastName;
 
-	public CustomerResource() {
+	public AuthorResource() {
 	}
 
-	public CustomerResource(String firstName, String lastName) {
+	public AuthorResource(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
