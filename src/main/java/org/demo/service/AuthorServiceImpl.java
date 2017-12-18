@@ -25,22 +25,6 @@ public class AuthorServiceImpl implements AuthorService {
 	private AuthorRepository authorRepository;
 
 	@Override
-	public void init() {
-		authorRepository.save(new Author("AAA", "lil1"));
-		authorRepository.save(new Author("aabb", "lil2"));
-		authorRepository.save(new Author("ccD", "lil3"));
-		authorRepository.save(new Author("ccD", "lil4"));
-		authorRepository.save(new Author("ccD", "lil5"));
-		authorRepository.save(new Author("ccD", "lil6"));
-		authorRepository.save(new Author("ccD", "lil7"));
-		authorRepository.save(new Author("ccD", "lil8"));
-		authorRepository.save(new Author("ccD", "lil9"));
-		authorRepository.save(new Author("ccD", "lil10"));
-		authorRepository.save(new Author("ccD", "lil11"));
-		authorRepository.save(new Author("ccD", "lil12"));
-	}
-
-	@Override
 	public Page<Author> search(Pageable pageable, AuthorCriteria criteria) {
 		return authorRepository.findAll(new CustomerSpecification(criteria), pageable);
 	}

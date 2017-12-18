@@ -6,7 +6,10 @@ package org.demo.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * Persistent class for "Author" entity stored in table "AUTHOR" <br>
@@ -81,11 +84,9 @@ public class Author implements Serializable {
 		return this.lastName;
 	}
 
-	// ----------------------------------------------------------------------
-	// toString METHOD
-	// ----------------------------------------------------------------------
+	@Override
 	public String toString() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		sb.append("[");
 		sb.append(id);
 		sb.append("]:");

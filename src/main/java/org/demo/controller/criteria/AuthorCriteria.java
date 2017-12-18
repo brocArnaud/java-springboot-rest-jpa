@@ -9,11 +9,6 @@ public class AuthorCriteria {
 	public AuthorCriteria() {
 	}
 
-	public AuthorCriteria(String firstName, String lastName) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
-
 	public String getFirstName() {
 		return firstName;
 	}

@@ -7,8 +7,6 @@ import org.springframework.data.domain.Pageable;
 
 public interface AuthorService {
 
-	public void init();
-
 	public Page<Author> search(Pageable pageable, AuthorCriteria criteria);
 
 	public Author get(Integer id);
