@@ -1,5 +1,18 @@
 SET REFERENTIAL_INTEGRITY FALSE
-delete from ROOT.author
 
+delete from ROOT.AUTHOR
+delete from ROOT.BADGE
+delete from ROOT.BOOK
+delete from ROOT.BOOK_ORDER
+delete from ROOT.BOOK_ORDER_ITEM
+delete from ROOT.COUNTRY
+delete from ROOT.CUSTOMER
+delete from ROOT.EMPLOYEE
+delete from ROOT.EMPLOYEE_GROUP
+delete from ROOT.PUBLISHER
+delete from ROOT.REVIEW
+delete from ROOT.SHOP
+delete from ROOT.SYNOPSIS
+delete from ROOT.WORKGROUP
 
 SET REFERENTIAL_INTEGRITY TRUE
